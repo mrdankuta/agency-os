@@ -1,0 +1,39 @@
+
+http://159.65.215.189:8056
+MPmo_fGOvUnWzLE-tTn3S7joWhIedq8H
+
+
+KEY: "c969c8c5360014c823c7e964b51d0af8"
+SECRET: "c969c8c5360014c823c7e964b51d0af8"
+
+DB_CLIENT: "pg"
+DB_HOST: "db.zwaypwauymqeooqtoaut.supabase.co"  
+DB_PORT: "5432" 
+DB_DATABASE: "postgres"
+DB_USER: "postgres"
+DB_PASSWORD: "ZW5JRHodp4blTpwI"
+
+STORAGE_LOCATIONS: digitalocean
+STORAGE_DIGITALOCEAN_DRIVER: s3
+STORAGE_DIGITALOCEAN_KEY: "DO00RELA33NYBVX4HFUB"
+STORAGE_DIGITALOCEAN_SECRET: "HRIent9DqxuN7SqMue0ZE1wRqzbbhEazP6JcidwQmZ8"
+STORAGE_DIGITALOCEAN_ENDPOINT: "https://rcos.fra1.digitaloceanspaces.com"
+STORAGE_DIGITALOCEAN_BUCKET: "rcos"
+STORAGE_DIGITALOCEAN_REGION: "fra1"
+
+
+REDIS_HOST="host-ip"
+REDIS_PORT="6379"
+REDIS_PASSWORD="redis-password"
+CACHE_ENABLED="true"
+CACHE_STORE="redis"
+CACHE_AUTO_PURGE="true"
+MESSENGER_STORE="redis"
+SYNCHRONIZATION_STORE="redis"
+PUBLIC_URL=${APP_URL}
+ADMIN_EMAIL="admin@example.com"
+ADMIN_PASSWORD="hunter2"
+
+
+
+docker-compose exec -u root directus chown -R node:node /directus/database /directus/extensions /directus/uploads

@@ -17,13 +17,13 @@ services:
     image: redis:6
 
   directus:
-    image: directus/directus:10.7.2
+    image: directus/directus:10.8.2
     ports:
       - 8055:8055
     volumes:
       - ./uploads:/directus/uploads
       # If you want to load extensions from the host
-      - ./extensions:/directus/extensions
+      # - ./extensions:/directus/extensions
     depends_on:
       - cache
       - database
@@ -43,7 +43,7 @@ services:
       REDIS: 'redis://cache:6379'
 
       ADMIN_EMAIL: 'admin@example.com'
-      ADMIN_PASSWORD: 'd1r3ctu5'
+      ADMIN_PASSWORD: 'admin'
 
       # These is helpful for local developement but should probably be removed in production
       CORS_ENABLED: 'true'
